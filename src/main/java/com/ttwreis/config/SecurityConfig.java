@@ -72,7 +72,10 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowedOriginPatterns(List.of(
             "http://localhost:3000",
-            "http://localhost:5173","https://ttwreis-frontend.onrender.com"
+            "http://localhost:5173",
+            "https://ttwreis-frontend.onrender.com",
+            "https://ttwreis-frontend.onrender.com",
+            "https://ttwries-front-end.onrender.com/"
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
