@@ -6,6 +6,9 @@ import lombok.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 @Entity
 @Table(name = "users")
 @Getter @Setter @Builder @NoArgsConstructor @AllArgsConstructor
@@ -86,8 +89,10 @@ public class User {
     private Application application;
 
     @Column(nullable = false, updatable = false)
+    @CreationTimestamp
     private LocalDateTime createdAt = LocalDateTime.now();
 
+    @UpdateTimestamp
     private LocalDateTime updatedAt;
 
     public enum Gender { Male, Female, Other }
