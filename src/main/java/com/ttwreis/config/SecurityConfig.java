@@ -75,7 +75,7 @@ public class SecurityConfig {
             "http://localhost:5173",
             "https://ttwreis-frontend.onrender.com",
             "https://ttwreis-frontend.onrender.com",
-            "https://ttwries-front-end.onrender.com/"
+            "https://ttwries-front-end.onrender.com/","https://ttwries-front-end-ca9f.onrender.com/"
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
